@@ -11,9 +11,6 @@ from wtforms.validators import DataRequired, Length
 from flask_gravatar import Gravatar
 from functools import wraps
 import os
-from dotenv import load_dotenv
-
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'random_key_123ksdlasd'
